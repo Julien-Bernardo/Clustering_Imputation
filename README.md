@@ -1,7 +1,8 @@
 # Clustering_Imputation
-Going beyond simple imputation of missing values using mean or mode, this class implements unsupervised clustering as a means to categorize data and impute missing values based on their group label. So far, Kmeans and Gaussian Mixture model have been implemented with a fast version that is less stable.
+Going beyond simple imputation of missing values using mean or mode, this class implements unsupervised clustering as a means to categorize data and impute missing values based on their group label. So far, Kmeans and Gaussian Mixture model have been implemented with a fast version that is less stable. These clustering methods only support numerical values right now, please convert categorical variables, I suggest count encoding or target encoding.
 
 List of functions:
+
 GMM:
 - fast_GMM(n_components, reg_covar)
   - return labels, means, X_hat
