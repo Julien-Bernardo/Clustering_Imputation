@@ -20,10 +20,11 @@ Visualization for choosing the number of clusters:
 
 
 Example of use:
-'''python
+
+```python
 imp = Clustering_Imputers(dataframe)
 
 labels, centroids, imputed_kmeans = imp.Kmeans(9)[2]
 
 labels, means, imputed_gmm = imp.GMM(3, 1e-5)[2]
-'''
+```
